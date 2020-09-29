@@ -11,13 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Righteous&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
     <section class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
-                <h1>Hi, I'm Delvon Fontenot</h1>
+                <h1>Delvon Fontenot, Software Developer</h1>
             </div>
             <div class="intro-wrapper">
                 <div class="nav-wrapper">
@@ -37,10 +38,10 @@
                     <img id="profile_pic" src="images/delvon2.jpg">
                     <h5 style="text-align: center; line-height: 0;"> Personlize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode = "light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode = "blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode = "green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode = "purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="settings-note">*Theme setting will be saved for <br> your next visit.</p>
                 </div>
@@ -51,7 +52,7 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I Do</h3>
-                            <p>Software developer passionate about building excellent software. I love learning, teaching, and working with others to find solutions to problems. I create and fix things!</p>
+                            <p>Software developer that's passionate about building excellent software. I love learning, teaching, and working with others to find solutions to problems. I create and fix things!</p>
                             <div id="corner-bl" class="corner"></div>
                             <div id="corner-br" class="corner"></div>
                         </div>
@@ -80,19 +81,19 @@
                     
                 <div id="skills">
                     <ul>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Postgres</li>
+                        <li>C# ****</li>
+                        <li>Java ***</li>
+                        <li>Python ***</li>
+                        <li>SQL ****</li>
+                        <li>Javascript ***</li>
                     </ul>
 
                     <ul>                         
-                        <li>Google Maps API</li>
-                        <li>JS Charts</li>
-                        <li>AWS (RDS/S3)</li>
-                        <li>Heroku</li>
-                        <li>HTML/CSS</li>
+                        <li>UI/UX Design **</li>
+                        <li>Data Management ****</li>
+                        <li>Networking/Security ****</li>
+                        <li>ASP.net ***</li>
+                        <li>HTML/CSS ****</li>
                     </ul>
                 </div>
                 </div>
@@ -117,6 +118,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">This is an intro to the page. Click here to go.</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -126,6 +128,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">This is an intro to the page.</p><p> Click here to go.</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -136,6 +139,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">This is an intro to the page. Click here to go.</p>
+                            <a href="#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -145,8 +149,24 @@
     
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style ="text-align: center">Contact Me</h3>
+            <form id="contact-form">
+                
+                <label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
+    <script type="text/javascript" src="js/script.js"></script>
 </body> 
 </html>
